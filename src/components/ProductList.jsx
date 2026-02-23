@@ -1,16 +1,17 @@
 import React from 'react';
 import ProductCard from './ProductCard';
-import '../styles/ProductList.css';
+import "../styles/ProductList.css";
 
-function ProductList({ products }) {
+function ProductList({ products, addToCart }) {
   return (
     <div className="product-list">
-      <h2>Our Products</h2>
-      <div className="product-grid">
-        {products.map((p) => (
-          <ProductCard key={p.id} product={p} />
-        ))}
-      </div>
+      {products.map((product) => (
+        <ProductCard
+          key={product.id}
+          product={product}
+          addToCart={addToCart}
+        />
+      ))}
     </div>
   );
 }

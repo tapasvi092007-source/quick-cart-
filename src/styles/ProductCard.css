@@ -74,3 +74,29 @@
   border-radius: 20px;
   font-weight: 500;
 }
+/* Add at the bottom of the file */
+.add-to-cart-btn {
+  /* Style this button */
+  width: 100%; /* Make it full width */
+  margin-top: 15px;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Purple gradient */
+  color: white; /* White text */
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer; /* Pointer cursor */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+  /* Hover effect - lift up slightly */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.add-to-cart-btn:active {
+  /* Click effect - scale down slightly */
+  transform: scale(0.98);
+}
